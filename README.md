@@ -2,4 +2,4 @@
 
 https://codybarr.dev
 
-Personal portfolio website to showcase apps I've built
+Personal portfolio. Static HTML and CSS; no build step or JavaScript required.
