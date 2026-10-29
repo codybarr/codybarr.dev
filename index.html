@@ -10,11 +10,19 @@
     <meta name="theme-color" content="#171a18" />
     <title>Cody Barr | Software Engineer & Tinkerer</title>
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Mono:wght@400&family=Manrope:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="fonts/manrope-latin-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/barlow-condensed-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link rel="stylesheet" href="main.css" />
   </head>
@@ -25,10 +33,16 @@
         <div class="identity-top">
           <img
             class="avatar"
-            src="images/avatar.png"
+            src="images/optimized/avatar-96.webp"
+            srcset="
+              images/optimized/avatar-48.webp   48w,
+              images/optimized/avatar-96.webp   96w,
+              images/optimized/avatar-144.webp 144w
+            "
+            sizes="48px"
             alt="Cody Barr"
-            width="400"
-            height="400"
+            width="48"
+            height="48"
           />
           <span class="micro">Engineer<br />& tinkerer</span>
         </div>
@@ -170,7 +184,14 @@
               >
                 <img
                   class="screenshot"
-                  src="images/squish.png"
+                  src="images/optimized/squish-800.webp"
+                  srcset="
+                    images/optimized/squish-400.webp   400w,
+                    images/optimized/squish-800.webp   800w,
+                    images/optimized/squish-1200.webp 1200w
+                  "
+                  sizes="(max-width: 620px) calc(100vw - 44px), (max-width: 800px) calc((100vw - 254px) / 2), (max-width: 1100px) calc((100vw - 338px) / 2), (max-width: 1480px) calc((100vw - 446px) / 2), 517px"
+                  fetchpriority="high"
                   alt="Squish compression tool with a drag-and-drop area and output format options"
                   width="1280"
                   height="800"
@@ -228,7 +249,14 @@
               >
                 <img
                   class="screenshot"
-                  src="images/cockpit.png"
+                  src="images/optimized/cockpit-800.webp"
+                  srcset="
+                    images/optimized/cockpit-400.webp   400w,
+                    images/optimized/cockpit-800.webp   800w,
+                    images/optimized/cockpit-1200.webp 1200w
+                  "
+                  sizes="(max-width: 620px) calc(100vw - 44px), (max-width: 800px) calc((100vw - 254px) / 2), (max-width: 1100px) calc((100vw - 338px) / 2), (max-width: 1480px) calc((100vw - 446px) / 2), 517px"
+                  loading="lazy"
                   alt="Cockpit macOS launcher showing application search results"
                   width="1940"
                   height="871"
@@ -286,7 +314,13 @@
               >
                 <img
                   class="screenshot"
-                  src="images/planning-poker.png"
+                  src="images/optimized/planning-poker-800.webp"
+                  srcset="
+                    images/optimized/planning-poker-400.webp   400w,
+                    images/optimized/planning-poker-800.webp   800w,
+                    images/optimized/planning-poker-1200.webp 1200w
+                  "
+                  sizes="(max-width: 620px) calc(100vw - 44px), (max-width: 800px) calc((100vw - 254px) / 2), (max-width: 1100px) calc((100vw - 338px) / 2), (max-width: 1480px) calc((100vw - 446px) / 2), 517px"
                   alt="Planning Poker with players, voting cards, and a reveal votes button"
                   width="2984"
                   height="1376"
@@ -345,7 +379,13 @@
               >
                 <img
                   class="screenshot"
-                  src="images/meal-mingle.png"
+                  src="images/optimized/meal-mingle-800.webp"
+                  srcset="
+                    images/optimized/meal-mingle-400.webp   400w,
+                    images/optimized/meal-mingle-800.webp   800w,
+                    images/optimized/meal-mingle-1200.webp 1200w
+                  "
+                  sizes="(max-width: 620px) calc(100vw - 44px), (max-width: 800px) calc((100vw - 254px) / 2), (max-width: 1100px) calc((100vw - 338px) / 2), (max-width: 1480px) calc((100vw - 446px) / 2), 517px"
                   alt="Meal Mingle meal coordination homepage"
                   width="2871"
                   height="1653"
@@ -404,7 +444,13 @@
               >
                 <img
                   class="screenshot"
-                  src="images/scrabble-solver.png"
+                  src="images/optimized/scrabble-solver-800.webp"
+                  srcset="
+                    images/optimized/scrabble-solver-400.webp   400w,
+                    images/optimized/scrabble-solver-800.webp   800w,
+                    images/optimized/scrabble-solver-1200.webp 1200w
+                  "
+                  sizes="(max-width: 620px) calc(100vw - 44px), (max-width: 800px) calc((100vw - 254px) / 2), (max-width: 1100px) calc((100vw - 338px) / 2), (max-width: 1480px) calc((100vw - 446px) / 2), 517px"
                   alt="Scrabble Solver showing letter input and words sorted by score"
                   width="1280"
                   height="661"

@@ -1,3 +1,32 @@
+/* Latin subsets of the original Google Fonts; licenses are in fonts/. */
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/barlow-condensed-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/barlow-condensed-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "DM Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/dm-mono-latin-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("fonts/manrope-latin-variable.woff2") format("woff2");
+}
 :root {
   color-scheme: dark;
   --ink: #171a18;
@@ -183,6 +212,8 @@ main {
 }
 .intro a {
   color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .bio-details {
   display: grid;
