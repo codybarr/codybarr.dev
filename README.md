@@ -6,9 +6,10 @@ Personal portfolio. Static HTML and CSS; no build step or JavaScript required.
 
 ## Assets
 
-Fonts are self-hosted Latin WOFF2 subsets of Barlow Condensed (600/700),
-DM Mono (400), and Manrope (variable, used at 400–600), sourced from Google
-Fonts. Their SIL Open Font Licenses are included in `fonts/`.
+Fonts are self-hosted Latin WOFF2 subsets of Barlow Condensed (600/700)
+and Manrope (variable, used at 400–600), sourced from Google Fonts. Their
+SIL Open Font Licenses are included in `fonts/`. Small monospace labels use
+system fonts, avoiding an additional font download.
 
 Original PNGs are retained in `images/`. After replacing a project screenshot
 or avatar, regenerate the responsive WebP files committed in `images/optimized/`:

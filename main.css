@@ -14,13 +14,6 @@
   src: url("fonts/barlow-condensed-latin-700.woff2") format("woff2");
 }
 @font-face {
-  font-family: "DM Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/dm-mono-latin-400.woff2") format("woff2");
-}
-@font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400 600;
@@ -79,7 +72,7 @@ main {
 }
 .micro {
   font:
-    400 11px/1.6 "DM Mono",
+    400 11px/1.6 ui-monospace,
     monospace;
 }
 .skip-link {
